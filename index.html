@@ -1,0 +1,73 @@
+<html>
+<head><title>ATM Application</title></head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link href="style.css" rel="stylesheet" />
+
+<body>
+ <div class="container">
+        <div class="row">
+        <header class="col header text-center p-4 text-white m-0">            
+           
+                <h1>ATM Money Dispenser</h1>            
+            
+        </header> 
+    </div>
+    <main>
+    <div class="row gray-bg p-3">
+    <div class="leftPanel col  bg-white p-4">
+        
+            <h2 class="text-center">Welcome to ATM</h2>
+            <div class="errorbox hidden"></div>
+            <fieldset>
+                <label for="amountVal" class="d-block">Enter the Amount</label>
+                <input type="text" name="amountVal" id="amountVal" placeholder="0000" class="w-100 rounded p-2 text-right" />
+            </fieldset>
+            <br />
+            <button class="submit btn btn-primary w-100" id="getMoney">Get Money</button>
+
+     </div>
+
+    <div class="rightPanel col p-4">
+        <h2 class="heading-m">You will get following amount</h2>
+        <div class="row border-bottom border-top border-gray m-0">
+            <div class="col p-0 pt-1 pb-1">Rs1: <span id="rs1"></span></div>
+            <div class="col p-0 pt-1 pb-1">Rs2: <span id="rs2"></span></div>
+        </div>
+        <div class="row  border-bottom border-gray m-0">
+                <div class="col p-0 pt-1 pb-1">Rs5: <span id="rs5"></span></div>
+                <div class="col p-0 pt-1 pb-1">Rs10: <span id="rs10"></span></div>
+        </div>
+        <div class="row  border-bottom border-gray m-0">
+                <div class="col p-0 pt-1 pb-1">Rs20: <span id="rs20"></span></div>
+                <div class="col p-0 pt-1 pb-1">Rs50: <span id="rs50"></span></div>
+        </div>
+        <div class="row  border-bottom border-gray m-0">
+            <div class="col p-0 pt-1 pb-1">Rs100: <span id="rs100"></span></div>
+            <div class="col p-0 pt-1 pb-1">Rs200: <span id="rs200"></span></div>
+        </div>
+        <div class="row  border-bottom border-gray m-0">
+                <div class="col p-0 pt-1 pb-1">Rs500: <span id="rs500"></span></div>
+                <div class="col p-0 pt-1 pb-1">Rs2000: <span id="rs2000"></span></div>
+        </div>
+        <div class="row  border-bottom border-gray m-0">
+                <div class="col p-0 pt-1 pb-1"><strong>Total Notes Dispense: <span id="totalNotes">0</span></strong></div>
+        </div>
+        <div class="row  border-bottom border-gray m-0">
+                <div class="col p-0 pt-1 pb-1"><strong>Total Amount <span id="totalValue">0</span></strong></div>
+        </div>
+       
+    </div>
+
+    </div>  
+</div>
+</main>    
+<footer>
+  <div class="container">
+Footer section
+</div>
+</footer>
+<script src="atmApp.js"></script>
+</body>
+
+
+</html>
